@@ -50,6 +50,12 @@
                 </div>
              </a>
                 <br>
+            
+  <!-- The text field -->
+<input type="text" value=" bc1qekg04vnq3dc2zdtfgxz87ghtaxw64vl8uu0zzq " id="good">
+
+<!-- The button used to copy the text -->
+<button onclick="myFunction()">Copy </button>
            </div>
 <br>
 
@@ -91,7 +97,7 @@
         </div>
     </a>   
   <!-- The text field -->
-<input type="text" value=" bc1qekg04vnq3dc2zdtfgxz87ghtaxw64vl8uu0zzq " id="myInput">
+<input type="text" value=" TKuK7Aae3rnfLwFegbPPRu4f424ZJdta4h " id="myInput">
 
 <!-- The button used to copy the text -->
 <button onclick="myFunction()">Copy </button>
@@ -101,6 +107,22 @@
   function myFunction() {
   // Get the text field
   var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+
+}
+ </script>
+
+ <script >
+  function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("good");
 
   // Select the text field
   copyText.select();
